@@ -39,18 +39,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <Utensils className="text-gold-500 text-2xl" />
+              {/* <Utensils className="text-gold-500 text-2xl" /> */}
               <h1 className="text-xl font-bold text-white">Six Dry Aged</h1>
               <span className="text-gold-400 text-sm font-medium">Fidelidade</span>
             </div>
-            
+
             <nav className="hidden md:flex space-x-6">
               <Button
                 variant="ghost"
                 onClick={showClientView}
-                className={`text-white hover:text-gold-400 transition-colors duration-200 ${
-                  currentView === "client" ? "text-gold-400" : ""
-                }`}
+                className={`text-white hover:text-gold-400 transition-colors duration-200 ${currentView === "client" ? "text-gold-400" : ""
+                  }`}
               >
                 <User className="h-4 w-4 mr-2" />
                 Área do Cliente
@@ -58,15 +57,14 @@ export default function Home() {
               <Button
                 variant="ghost"
                 onClick={showAdminView}
-                className={`text-white hover:text-gold-400 transition-colors duration-200 ${
-                  currentView === "admin" ? "text-gold-400" : ""
-                }`}
+                className={`text-white hover:text-gold-400 transition-colors duration-200 ${currentView === "admin" ? "text-gold-400" : ""
+                  }`}
               >
                 <Settings className="h-4 w-4 mr-2" />
                 Painel Admin
               </Button>
             </nav>
-            
+
             <Button
               variant="ghost"
               size="sm"
@@ -77,7 +75,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        
+
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-gray-900">
