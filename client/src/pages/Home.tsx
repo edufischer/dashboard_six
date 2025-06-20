@@ -78,7 +78,7 @@ export default function Home() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-gray-900">
+          <div className="md:hidden bg-black">
             <div className="px-4 py-3 space-y-2">
               <Button
                 variant="ghost"
